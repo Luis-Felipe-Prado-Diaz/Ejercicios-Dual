@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fuente-principal: 'Poppins', sans-serif;
+  --color-principal: #FFFF0B;
+  --color-secundario: #000000;
+  --color-terciario: #FFFFFF;
+  --color-cuaternario: #383838;
+}
