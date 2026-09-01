@@ -356,3 +356,7 @@ main .banner .banner-texto p {
   text-align: center;
   color: var(--color-secundario);
 }
+
+header {
+  padding: 5px 5px 5px 5px;
+}
