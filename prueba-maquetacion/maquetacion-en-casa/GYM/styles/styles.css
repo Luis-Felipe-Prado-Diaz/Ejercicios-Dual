@@ -343,7 +343,7 @@ header .button-box a button span svg {
 
 .contador {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 	background-color: var(--color-secundario);
 	padding: 1rem;
 	margin: 0 10%;
@@ -456,7 +456,7 @@ header .button-box a button span svg {
 /* seccion services */
 .services {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
 	gap: 2rem;
 	margin: 0 10%;
 	padding: 2rem 0;

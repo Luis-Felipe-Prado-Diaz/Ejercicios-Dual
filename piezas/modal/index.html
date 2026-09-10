@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal · LUIS FELIPE PRADO</title>
+  <script type="module" src="./src/index.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Acerca de</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+      <button class="abrir-modal" id="btn-modal">Login</button>
+    </nav>
+  </header>
+  <main>
+    <div class="modal active">
+      <button class="cerrar-modal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <title>close-thick</title>
+          <path
+            d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" />
+        </svg></button>
+      <div class="titulo-modal">
+        <h2>Login</h2>
+      </div>
+      <form action="" class="formulario">
+        <div class="modal-label">
+          <label for="usuario">Usuario</label>
+        </div>
+        <div class="modal-input">
+          <input type="text" id="usuario">
+        </div>
+        <div class="modal-label">
+          <label for="password">Password</label>
+        </div>
+        <div class="modal-input">
+          <input type="password" id="password">
+        </div>
+        <div class="modal-input-submit">
+          <input type="submit" value="Enviar" id="enviar">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

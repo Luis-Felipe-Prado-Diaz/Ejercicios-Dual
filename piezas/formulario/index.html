@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario · luis felipe</title>
+  <script type="module" src="./src/index.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <!-- menu falcil de hacer -->
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Acerca de</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+      <button class="abrir-modal" id="btn-modal">Login</button>
+    </nav>
+  </header>
+  <main>
+    <!-- formulario -->
+    <form action="get" class="formulario">
+      <div class="nombre">
+        <div class="form-label">
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="form-input">
+          <input type="text" id="nombre" name="nombre">
+        </div>
+      </div>
+
+      <div class="apellido">
+        <div class="form-label">
+          <label for="apellido">Apellido</label>
+        </div>
+        <div class="form-input">
+          <input type="text" id="apellido" name="apellido">
+        </div>
+      </div>
+      <div class="email">
+        <div class="form-label">
+          <label for="email">Email</label>
+        </div>
+        <div class="form-input">
+          <input type="email" id="email" name="email">
+        </div>
+      </div>
+
+      <div class="telefono">
+        <div class="form-label">
+          <label for="telefono">Telefono</label>
+        </div>
+        <div class="form-input">
+          <input type="number" id="telefono" name="telefono">
+        </div>
+      </div>
+
+      <div class="mensaje">
+        <div class="form-label">
+          <label for="mensaje">Mensaje</label>
+        </div>
+        <div class="form-input">
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+
+      <div class="btn-enviar">
+        <button type="submit" class="enviar">Enviar</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>
