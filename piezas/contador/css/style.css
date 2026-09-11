@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 2em;
+  background-color: #e6e6e6;
+}
+
+main {
+  height: 80vh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  margin-top: 2em;
+}
+
+.contador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-top: 2em;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.contador .boton1 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #202020;
+  color: #fff;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.boton1 button:active {
+  background-color: #4b4a4a;
+}
+
+.contador .boton2 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #202020;
+  color: #fff;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.boton2 button:active {
+  background-color: #4b4a4a;
+}
+
+.contador input {
+  width: 100%;
+  padding: 0.5rem 0.2em;
+  border: none;
+  font-size: 2em;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  color: #111111;
+}
+
+.contador input::-webkit-inner-spin-button, 
+.contador input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
