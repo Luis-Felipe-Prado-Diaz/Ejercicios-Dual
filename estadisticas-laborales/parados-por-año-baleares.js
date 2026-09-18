@@ -20,7 +20,8 @@
 
     filterData = filterData.filter(element =>{ 
       return element.sexo !== "_T" && 
-            element.municipio === "Illes Balears" 
+            element.municipio === "Illes Balears" &&
+            element.medidas === "Parados registrados"
     })
 
     filterData = filterData.reduce((years, element) =>{
@@ -38,7 +39,7 @@
       return years
     }, {})
 
-    await fs.writeFile('./data/resultado.json', JSON.stringify(filterData, null, 2))
+    await fs.writeFile('./data/resultado1.json', JSON.stringify(filterData, null, 2))
 
   } catch (error) {
     console.log(error)

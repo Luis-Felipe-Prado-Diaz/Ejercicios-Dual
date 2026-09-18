@@ -21,20 +21,27 @@
     })
 
     filterData = filterData.reduce((acumulador, element) => {
-      let [codigoPostal, municipio] = element.municipio.split(' ')
+      let [codigoPostal, ...municipio] = element.municipio.split(' ')
       let periodo = element.Periodo
       let sexo = element.Sexo
-      let cantidad = Number(element.cantidad) ? Number(element.cantidad.replace('.', '')) : Number(element.cantidad);
+      let cantidad = Number(element.cantidad) ? Number(element.cantidad.replaceAll('.', '')) : Number(element.cantidad);
+      municipio = municipio.join(' ')
+
+      if (municipio.includes("(")) {
+        const partes = municipio.split("")
+        const articuloNormalizado = partes.pop().replace(/[()]/g, '')
+
+        municipio = `${articuloNormalizado} ${partes.join(" ")}`
+      }
 
       if (!acumulador[codigoPostal]) acumulador[codigoPostal] = {}
       if (!acumulador[codigoPostal][sexo]) acumulador[codigoPostal][sexo] = {}
       acumulador[codigoPostal][sexo][periodo] = {
-        sexo: sexo,
-        periodo,
-        municipio: municipio,
         codigoPostal,
-        sexo: sexo,
-        cantidad: cantidad 
+        sexo,
+        periodo,
+        municipio,
+        cantidad
       }
       return acumulador
     }, {})

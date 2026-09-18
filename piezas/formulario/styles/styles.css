@@ -145,3 +145,36 @@ textarea{
   color: #fff;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
 }
+
+.notification{
+  display: none;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  
+}
+
+.notification span{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.notification.success{
+  display: block;
+  background: green;
+  color: white;
+  animation: successNotification 0.5s ease;
+}
+.notification.error{
+  display: block;
+  background: red;
+  color: white;
+  animation: errorNotification 0.5s ease;
+}
+
+

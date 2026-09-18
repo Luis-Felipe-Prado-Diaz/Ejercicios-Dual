@@ -1,2 +1,3 @@
-import './enviar.js';
+import './formulario.js';
+import './notificacion.js';
 
